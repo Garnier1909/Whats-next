@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>USERデータ登録</title>
+</head>
+
+<body>
+
+  <!-- Main[Start] -->
+  <main>
+    <article>
+      <form method="post" action="users_insert.php">
+        <h1>ユーザー登録</h1>
+        <fieldset>
+          <table>
+            <tr>
+              <th>名前 : </th>
+              <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+              <th>ログインID : </th>
+              <td><input type="text" name="lid"></td>
+            </tr>
+
+            <tr>
+              <th>メールアドレス : </th>
+              <td><input type="text" name="mail"></td>
+            </tr>
+
+            <tr>
+              <th>パスワード : </th>
+              <td><input type="text" name="lpw"></td>
+            </tr>
+
+            <tr>
+              <th>性別 :</th>
+              <td>
+                男性<input type="radio" name="gender" value="0">
+                女性<input type="radio" name="gender" value="1">
+              </td>
+            </tr>
+
+            <tr>
+              <th>役職 : </th>
+              <td><input type="text" name="depart"></td>
+            </tr>
+
+            <tr>
+              <th>利用規模 :</th>
+              <td>
+                個人<input type="radio" name="sort" value="0">
+                法人<input type="radio" name="sort" value="1">
+              </td>
+            </tr>
+
+          </table>
+
+          <input type="submit" class="button" value="送信">
+
+        </fieldset>
+      </form>
+    </article>
+  </main>
+  <!-- Main[End] -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>タスク追加</title>
+</head>
+
+<body>
+
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+    </style>
+    
+    <header>
+        <h1><a href="select.php">What's next?</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="logout.php">ログアウト</a></li>
+                    <li><a href="users_select.php">ユーザー管理</a></li>
+                </ul>
+            </nav>
+        </header>
+              
+
+
+    <main>
+        <article>
+            <form method="post" action="insert.php">
+                <table>
+                    <tr>
+                        <th>タスク：</th>
+                        <td><input type="text" name="task" size="20"></td>
+                    </tr>
+
+                    <tr>
+                        <th>担当者：</th>
+                        <td><input type="text" name="incharge" size="20"></td>
+                    </tr>
+
+                    <tr>
+                        <th>期限 : </th>
+                        <td><input type="text" name="deadline" size="20" value="XXXX-XX-XX"></td>
+                    </tr>
+
+                    <tr>
+                        <th>メモ：</th>
+                        <td><textarea rows="3" name="note" cols="30"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <th>重要度：</th>
+                        <td>
+                            低<input type="radio" name="prim" value="0">&emsp;
+                            中<input type="radio" name="prim" value="1">&emsp;
+                            高<input type="radio" name="prim" value="2">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>進捗：</th>
+                        <td>
+                            未着手<input type="radio" name="progress" value="0">&emsp;
+                            途中<input type="radio" name="progress" value="1">&emsp;
+                            完了<input type="radio" name="progress" value="2">
+                        </td>
+                    </tr>
+                </table>
+                <p><input type="submit" class="button" value="送信"></p>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>
